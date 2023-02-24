@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col">
+        <ul>
+            <li *ngFor="let comentari of comments">
+                <h5>{{comentari.name}}</h5>
+                {{comentari.body}}
+                <small>
+                    <span class="badge bg-success">
+                        {{comentari.email}}
+                    </span>
+                </small>
+            </li>
+        </ul>
+    </div>
+    <a routerLink="/posts">-Tornar-</a>
+</div>

@@ -1,0 +1,82 @@
+<div class="jumbotron">
+    <h1 class="display-4">Hola a tothom!!!</h1>
+    <p class="lead">
+        Aquesta és una unitat d'un component senzill d'estil jumbotron per cridar 
+        l'atenció addicional al contingut o la informació destacada. 
+    </p>
+    <hr class="my-4"/>
+        <ul>
+            <li>Crear un projecte senzill a Angular</li>
+            <li>Entendre l'ús de rutes a Angular</li>
+            <li>Usar el component Router per a la càrrega dinàmica de pàgines</li>
+            <li>Usar el patró d'injecció de dependències per a l'ús de serveis i captura de paràmetres</li>
+            <li>Crear serveis de generació de dades síncrons</li>
+            <li>Crear serveis asíncrons basats en APIs REST</li>
+            <li>Consumir de serveis de forma asíncrona</li>
+            <li>Presentar dades dels components a les vistes</li>
+          </ul>  
+    <a class="btn btn-primary btn-lg" href="#" role="button">Més informació</a>
+</div>
+<div class="jumbotron">
+    <h1 class="display-4">Passes per a construir el nostre projecte @Angular</h1>
+      <ul class="lead">
+        <li>Creació del projecte</li>
+          <ol>
+            <li>ng new 04_NavApp</li>
+          </ol>
+          <li>Instal·lació de Bootstrap</li>
+          <ol>
+            <li>npm install bootstrap jquery @popperjs/core --save</li>
+            <li>Incloure en la secció architect.build d'angular.json les referències al CSS i json
+            <br>Això equival a incloure a l'index.html el CSS i JS
+            </li>
+          </ol>
+          <li>Creació dels components</li>
+          <ol>
+            <li>ng generate component components/home</li>
+            <li>ng generate component components/about</li>
+            <li>ng generate component components/shared/navbar</li>
+            <li>Aquests components són generats de manera automàtica a l'array de declarations en app.module.ts</li>
+          </ol>
+          <li>Enrutament</li>
+          <ol>
+            <li>Les rutes es trobaran definides a l'arxiu app.route.ts</li>
+            <li>Aquest nou fitxer creat s'ha d'importar a app.module.ts</li>
+            <li>S'ha d'afegir a l'array imports RouterModule.forRoot(ROUTES,&#123;useHash:true&#125;)</li>
+            <li>A la pàgina app.component.html haurem de posar el selector router-outlet</li>
+          </ol>
+          <li>Servei de dades en memòria</li>
+          <ol>
+            <li>Crearem el servei amb la comanda ng g s services/empleats</li>
+            <li>Recordem que hem de posar manualment el servei EmpleatsService dins la seccció providers
+              al fitxer app.module.ts
+            </li>
+            <li>Complement el servei declarant un array d'empleats</li>
+            <li>Creem dos mètodes dins el servei</li>
+          </ol>
+          <li>Creació del component d'empleats</li>
+          <ol>
+            <li>La comanda ng g c components/empleats</li>
+            <li>Recordem que hem d'actualitzar el fitxer de rutes</li>
+            <li>Recordem que hem de modificar la vista del menú</li>
+            <li>Implementar el controlador d'empleats (empleats.component.ts)</li>
+            <li>Creem la vista que representa al component</li>
+          </ol>
+          <li>Creació del component detall de l'empleat</li>
+          <ol>
+            <li>La comanda ng g c components/empleat</li>
+            <li>Recordem que hem d'actualitzar el fitxer de rutes</li>
+            <li>Implementar el controlador d'empleat (empleat.component.ts)</li>
+            <li>Creem la vista que representa al component</li>
+          </ol>
+          <li>Creació d'un servei API REST</li>
+          <ol>
+            <li>Crear el servei per mostrar els posts. 
+              Recordem que aquesta información serà externa a la nostra aplicació.</li>
+            <li>Hem d'importar en la secció providers el module HttpCLientModule (app.module.ts)</li>
+            <li>Crearem el component que farà servir el servei</li>
+            <li> Per fer la crida, fem servir el mètode subscribe.</li>
+            <li>Crear el component per mostrar el detall dels posts</li>
+          </ol>
+      </ul>
+  </div>
