@@ -1,0 +1,46 @@
+Actividad de ampliación para una aplicación Angular
+
+En esta actividad de ampliación para una aplicación Angular, se trabajará en los siguientes aspectos básicos para cualquier aplicación móvil:
+
+Almacenamiento en el ámbito local:
+Se debe programar la funcionalidad de un CRUD (Create, Read, Update & Delete) sobre el servicio correspondiente de Angular empleados.service.ts. Es decir, se habilitará la funcionalidad de poder crear, listar, editar y borrar empleados desde el Local Storage del navegador. Desde la vista, se realizarán las llamadas correspondientes.
+
+Desarrollo de un servicio en el servidor ivannieto.cat:
+En este servidor se desarrollará un servicio en PHP que permitirá consumir y ofrecer información de la base de datos "tourdefrance". Se proporcionan los siguientes detalles técnicos:
+
+Nombre de la base de datos: tourdefrance
+
+Usuario: dbtourdefrance
+
+Contraseña: ViveLeTour2022
+
+Estructura de la tabla:
+
+sql
+Copy code
+CREATE TABLE lecourde (
+  id INT PRIMARY KEY,
+  año INT,
+  ganador VARCHAR(255),
+  pais_ganador VARCHAR(50),
+  equipo_ganador VARCHAR(255),
+  segundo_lugar VARCHAR(255),
+  tercer_lugar VARCHAR(255),
+  distancia_km FLOAT,
+  etapas INT,
+  fecha_inicio DATE,
+  fecha_fin DATE
+);
+En esta tabla, cada fila representa un año del Tour de Francia y las columnas representan diferentes aspectos de la información relacionada con el evento.
+
+Las siguientes son las filas insertadas:
+
+sql
+Copy code
+INSERT INTO TourDeFrancia (id, año, ganador, pais_ganador, equipo_ganador, segundo_lugar, tercer_lugar, distancia_km, etapas, fecha_inicio, fecha_fin) VALUES
+(1, 2022, 'Tadej Pogacar', 'Eslovenia', 'UAE Team Emirates', 'Jonas Vingegaard', 'Richard Carapaz', 3483.5, 21, '2022-07-02', '2022-07-24'),
+(2, 2021, 'Tadej Pogacar', 'Eslovenia', 'UAE Team Emirates', 'Jonas Vingegaard', 'Richard Carapaz', 3414.4, 21, '2021-06-26', '2021-07-18'),
+(3, 2019, 'Egan Bernal', 'Colombia', 'Team Ineos', 'Geraint Thomas', 'Steven Kruijswijk', 3364.1, 21, '2019-07-06', '2019-07-28'),
+(4, 2018, 'Geraint Thomas', 'Reino Unido', 'Team Sky', 'Tom Dumoulin', 'Chris Froome', 3329, 21, '2018-07-07', '2018-07-29'),
+(5, 2017, ...
+Para completar esta actividad, los estudiantes deben agregar la funcionalidad de CRUD en el servicio empleados.service.ts y desarrollar el servicio en PHP en el servidor ivannieto.cat para consumir y ofrecer información de la base de datos "tourdefrance".
